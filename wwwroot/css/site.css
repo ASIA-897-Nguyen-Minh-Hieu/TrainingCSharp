@@ -21,14 +21,24 @@ html {
 body {
   margin-bottom: 60px;
 }
+#contentDelivery {
+  padding-left: 110px;
+}
 
 .bg-body-pink {
   background-image: linear-gradient(to right, #fbaa93 40%, #FC7488 60%) !important;
 }
+.top-header {
+  position: sticky !important;
+  top: 0;
+  z-index: 9999;
+}
 .sidebarstyle {
   padding: 0;
-  z-index: 0;
+  z-index: 9999;
   height: 100vh;
+  position: fixed;
+  top: 35px;
 }
 
 .bg-grey {
@@ -61,6 +71,11 @@ a.nav-link.py-3.active {
   margin-left: 30px;
 }
 
+.title-page {
+  font-size: 20px;
+  font-weight: bold;
+}
+
 .link-dark {
   color: white !important;
 }
@@ -90,7 +105,7 @@ a.nav-link.py-3.active {
   padding: 20px;
   position: fixed;
   bottom: 0;
-  z-index: 999;
+  z-index: 10000;
   background-color: #ffff;
   width: 100vw;
   height: 80px;
